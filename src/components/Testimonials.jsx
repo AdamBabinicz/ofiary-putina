@@ -161,7 +161,7 @@ const Section = styled.section`
     padding: 2rem 0;
 
     .testimonials {
-      margin: 5rem 15rem;
+      /* margin: 5rem 15rem; */
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -234,6 +234,7 @@ const Section = styled.section`
         img {
           width: 100% !important;
           height: 30rem !important;
+          object-fit: contain;
         }
       }
     }
