@@ -233,7 +233,7 @@ const Section = styled.section`
       .circle2 {
         img {
           width: 100% !important;
-          height: 30rem !important;
+          height: 25rem !important;
           object-fit: contain;
         }
       }
