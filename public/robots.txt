@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://zbrodnie-putina.netlify.app/sitemap.xml
-Host: https://zbrodnie-putina.netlify.app
+Sitemap: https://ofiary-putina.netlify.app/sitemap.xml
+Host: https://ofiary-putina.netlify.app
 
