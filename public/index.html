@@ -1,43 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/8.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="DESCRIPTION"
+      content="Obraz po 'zaczystce'. Planowe ludobójstwo ludności cywilnej. To samo robili w Czeczenii. Ale jest jedna różnica: teraz nikt im nie odpuści. Ukraińska Srebrenica zostanie pomszczona. (Jarosław Wolski)"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="Zbrodnia w Buczy. Mer miasta: 90 proc. ofiar zginęło od kul, nie przez bombardowania."
+      content="index, follow"
+    />
+    <meta name="handheldFriendly" content="true" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Świat nigdy nie zapomni o bestialsko zamordowanych przez Rosjan cywilach w Buczy!"
+    />
+    <meta property="og:url" content="https://zbrodnie-putina.netlify.app" />
+    <meta
+      property="og:image"
+      content="https://zbrodnie-putina.netlify.app/14.jfif"
+    />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="1200" />
+    <meta
+      property="business:contact_data:street_address"
+      content="Mordy popełniane na cywilach miały wywołać strach i przerażenie wśród ukraińskiej ludności, a także sprawić, by nie stawiała oporu Rosjanom."
+    />
+    <meta
+      property="business:contact_data:locality"
+      content="Masza Makarowa: Odpowiedzialność moralna spada na wszystkich Rosjan. Skończyły się czasy bycia 'poza polityką'."
+    />
+    <meta
+      property="business:contact_data:region"
+      content="Nie ma szeregowych Rosjan. Społeczeństwo rosyjskie jest bardzo zróżnicowane - liczy ok. 140 mln ludzi. Jest zatomizowane jak każde społeczeństwo autorytarne. Więzi społecznych prawie nie ma. Jest pod mocnym wpływem reżimu Putina i propagandy, która toczy to społeczeństwo od wielu lat."
+    />
+    <meta property="business:contact_data:postal_code" content="61000–61499" />
+    <meta
+      property="business:contact_data:country_name"
+      content="Rosjanie masowo porywają dzieci. Tysiące sierot nielegalnie 'ewakuowanych' do Rosji."
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:site"
+      content="https://twitter.com/BeataKempa_MEP/status/1509545208018522112"
+    />
+    <meta
+      name="twitter:title"
+      content="'Kupując rosyjską ropę i gaz finansujecie zabijanie Ukraińców. (...) Dość już karmienia rosyjskiej machiny wojskowej. Polska, Litwa, Łotwa i Estonia już zrezygnowały z finansowania ludobójstwa'."
+    />
+    <meta
+      name="twitter:description"
+      content="Ma na rękach krew tysięcy ofiar. Najbardziej krwiożerczy seryjny morderca w najnowszej historii."
+    />
+    <meta
+      name="twitter:image"
+      content="https://zbrodnie-putina.netlify.app/31.jpg"
+    />
+    <meta name="twitter:image:alt" content="" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/1.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Freckle+Face&family=Moo+Lah+Lah&family=Nosifer&family=Pirata+One&family=Stick&family=Zilla+Slab+Highlight:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ofiary beztialskiej wojny Putina</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="modal"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "VideoObject",
+        "name": "Rosjanie w Ukrainie, to - zbrodniarze, złodzieje i gwałciciele",
+        "contentUrl": "https://pl-pl.facebook.com/AmbasadaUkrainywPolsce",
+        "duration": "PT00H04M33S",
+        "thumbnailUrl": "https://zbrodnie-putina.netlify.app/3.jfif",
+        "uploadDate": "2022-04-08",
+        "description": "'Atak rakietowy na dworzec w Kramatorsku, wymierzony w rodziny z dziećmi oczekujące na ewakuację, jest kolejną odrażającą zbrodnią. Rosja nie ukrywa, że celowo zabija ludność cywilną. Poniesie konsekwencje swoich działań'."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "url": "https://zbrodnie-putina.netlify.app"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Putin i Cyryl I - już wkrótce w objęciach Lucyfera",
+        "url": "https://zbrodnie-putina.netlify.app",
+        "sameAs": [
+          "https://m.facebook.com/WirtualnaPolska/videos/wojna-na-ukrainie/288683973210839",
+          "https://mobile.twitter.com/nawschodzie2022",
+          "https://pl.wikipedia.org/wiki/Inwazja_Rosji_na_Ukrain%C4%99_(2022)",
+          "https://www.youtube.com/watch?v=q-1k9oYCB9c",
+          "https://pl.pinterest.com/pin/601371356505165247"
+        ]
+      }
+    </script>
   </body>
 </html>
