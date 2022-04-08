@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import home from "../assets/14.jpg";
+import home1 from "../assets/14.jfif";
 import play from "../assets/12.png";
 import img from "../assets/9.png";
 import Navbar from "./Navbar";
@@ -169,15 +170,28 @@ const Section = styled.section`
   }
 
   @media screen and (min-width: 280px) and (max-width: 1080px) {
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+      url(${home1}) top center/auto no-repeat;
+    max-height: 100%;
+
     .home {
+      /* height: 100vh; */
+      /* background: transparent; */
+
       .content {
         padding-left: 2rem;
         width: 100%;
-        margin-bottom: 2rem;
+        margin-top: 1.8rem;
         .title {
           h1 {
-            font-size: 4rem;
-            line-height: 4rem;
+            font-size: 3rem;
+            line-height: 3rem;
+          }
+        }
+        .subTitle {
+          p {
+            width: 100%;
+            margin-bottom: 1rem;
           }
         }
       }
