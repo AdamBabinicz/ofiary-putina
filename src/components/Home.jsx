@@ -190,7 +190,7 @@ const Section = styled.section`
         }
         .subTitle {
           p {
-            width: 100%;
+            width: 95%;
             margin-bottom: 1rem;
           }
         }
