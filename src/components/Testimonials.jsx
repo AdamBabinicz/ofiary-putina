@@ -230,9 +230,11 @@ const Section = styled.section`
 
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     .image {
-      img {
-        width: 100%;
-        height: 30rem;
+      .circle2 {
+        img {
+          width: 100% !important;
+          height: 30rem !important;
+        }
       }
     }
   }
